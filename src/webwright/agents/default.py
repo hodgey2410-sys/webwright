@@ -419,7 +419,7 @@ class DefaultAgent:
                     "format_errors": self.n_format_errors,
                 },
                 "messages": [_sanitize_message_for_disk(message) for message in self.messages],
-                "trajectory_format": "mini-swe-webagent-0.1",
+                "trajectory_format": "webwright-0.1",
             },
             self.model.serialize(),
             self.env.serialize(),
